@@ -1,0 +1,17 @@
+body {
+    margin-top: 50px;
+}
+h2 {
+    text-align: center;
+}
+.box {
+    width: 30rem;
+    margin: auto;
+    border: 2px solid #ddd;
+    text-align: center;
+}
+button {
+    margin: 1rem 2rem;
+    background-color: #16a085;
+    border: none;
+}
