@@ -1,3 +1,9 @@
+<?php
+    include_once "./inc/functions.php";
+
+    
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +26,7 @@
             <div class="column">
                 <h2>PHP Measurement Converter</h2>
                 <div class="box">
-                    <button>KG and Pound</button>
+                    <button onclick="location.href='./kg-pound.php';">KG and Pound</button>
                     <button>Fit and Inch</button>
                     <button>Temperature</button>
                     <button>Date</button>

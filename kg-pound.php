@@ -1,3 +1,23 @@
+<?php
+    require_once "./inc/functions.php";
+
+    $selectbox1 = '';
+    $selectbox2 = '';
+    $inputData = '';
+    $result = '';
+    if(isset($_GET['submit'])) {
+        $selectbox1 = $_GET['selectbox1'];
+        $selectbox2 = $_GET['selectbox2'];
+        $inputData = $_GET['inputdata'];
+        
+        if($selectbox1 != "" && $selectbox2 !="" && $inputData !="") {
+            
+            $result = kgPoundConverter($inputData, $selectbox1, $selectbox2);
+        }
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,21 +40,28 @@
             <div class="column">
                 <h2>KG and Pound Converter</h2>
                 <div class="box">
-                    <form action="" method="GET" class="formbox">
+                    <form action="./kg-pound.php" method="GET" class="formbox">
                         <label for="inputData">Enter your number</label>
-                        <input type="number" id=inputData>
-                        <select value="">
-                            <option name="kg" id="kg">KG</option>
-                            <option name="pound" id="pound">Pound</option>
+                        <input type="number" name="inputdata" id=inputData>
+                        <select name="selectbox1">
+                            <option value="1">KG</option>
+                            <option value="2">Pound</option>
                         </select>
                         <label for="to">To</label>
-                        <select value="">
-                            <option name="kg" id="kg">KG</option>
-                            <option name="pound" id="pound">Pound</option>
+                        <select name="selectbox2" value="1">
+                            <option value="1">KG</option>
+                            <option value="2">Pound</option>
                         </select>
-                        <input type="submit" value="Convert">
+                        <input type="submit" name="submit" value="Convert">
 
                     </form>
+                    <?php
+                        if($result != "") {
+                            ?>
+                            <blockquote><?php echo "Result: {$result}" ?></blockquote>
+                            <?php 
+                        }
+                    ?>
                 </div>
             </div>
         </div>
