@@ -28,7 +28,7 @@
                 <div class="box">
                     <button onclick="location.href='./kg-pound.php';">KG and Pound</button>
                     <button onclick="location.href='./feet-inch.php';">Feet and Inch</button>
-                    <button>Temperature</button>
+                    <button onclick="location.href='./temperature.php';">Temperature</button>
                     <button>Date</button>
                 </div>
             </div>
