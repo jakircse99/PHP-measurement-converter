@@ -27,7 +27,7 @@
                 <h2>PHP Measurement Converter</h2>
                 <div class="box">
                     <button onclick="location.href='./kg-pound.php';">KG and Pound</button>
-                    <button>Fit and Inch</button>
+                    <button onclick="location.href='./feet-inch.php';">Feet and Inch</button>
                     <button>Temperature</button>
                     <button>Date</button>
                 </div>

@@ -12,7 +12,7 @@
         
         if($selectbox1 != "" && $selectbox2 !="" && $inputData !="") {
             
-            $result = kgPoundConverter($inputData, $selectbox1, $selectbox2);
+            $result = fitInchConverter($inputData, $selectbox1, $selectbox2);
         }
     }
 
@@ -38,19 +38,19 @@
     <div class="container">
         <div class="row">
             <div class="column">
-                <h2>KG and Pound Converter</h2>
+                <h2>Feet and Inch Converter</h2>
                 <div class="box">
-                    <form action="./kg-pound.php" method="GET" class="formbox">
-                        <label for="inputData">Enter your number</label>
+                    <form action="" method="GET" class="formbox">
+                        <label for="inputData">Enter your measurement</label>
                         <input type="number" name="inputdata" id="inputData" step="any">
                         <select name="selectbox1">
-                            <option value="1">KG</option>
-                            <option value="2">Pound</option>
+                            <option value="1">Fit</option>
+                            <option value="2">Inch</option>
                         </select>
                         <label for="to">To</label>
                         <select name="selectbox2" value="1">
-                            <option value="1">KG</option>
-                            <option value="2">Pound</option>
+                            <option value="1">Fit</option>
+                            <option value="2">Inch</option>
                         </select>
                         <input type="submit" name="submit" value="Convert">
 
