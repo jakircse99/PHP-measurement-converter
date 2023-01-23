@@ -29,7 +29,7 @@
                     <button onclick="location.href='./kg-pound.php';">KG and Pound</button>
                     <button onclick="location.href='./feet-inch.php';">Feet and Inch</button>
                     <button onclick="location.href='./temperature.php';">Temperature</button>
-                    <button>Date</button>
+                    <button onclick="location.href='./date-calculator.php';">Date Calculator</button>
                 </div>
             </div>
         </div>

@@ -56,3 +56,12 @@ function temperatureConverter($inputData, $selectbox1, $selectbox2) {
         return $inputData;
     }
 }
+
+// Date Calculator
+
+function dateCalculator($date1, $date2) {
+    $date1 = date_create($date1);
+    $date2 = date_create($date2);
+    $diff = date_diff($date1, $date2);
+    return $diff->format("%Y years %m months %d days");
+}
